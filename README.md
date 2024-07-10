@@ -40,11 +40,11 @@ To derive value addition from the satellite images, additional processing is req
 | 5. | clubbed_masks_20240429.tif | 311 | 1.1 |
 
 ## Solution 3 - Edge Vision
-In this solution, object detection is performed where only the geocoded bounding boxes are downloaded. This significantly reduces the size. For this example we have a fire detection application where the output is a geoJSON with details of pixel where fire was detected. The location in the dataset is Patiala region in Punjab and the image range is from [16 October 2023 - 05 November 2023]. The output data can be found [here](https://workdrive.zohopublic.in/external/32d6bdb7f7310222f205e9a1938ae876d01a3dafe7985e301d4afb4f150bacec).  
+In this solution, object detection is performed where only the geocoded bounding boxes are downloaded. This significantly reduces the size. For this example we have a fire detection application where the output is a geoJSON with details of pixel where fire was detected. The location in the dataset is Patiala region in Punjab and the image range is from [16 October 2023 - 05 November 2023]. The output data can be found [here](https://workdrive.zohopublic.in/external/32d6bdb7f7310222f205e9a1938ae876d01a3dafe7985e301d4afb4f150bacec).    
 
 
 |Sl No| Dataset Name | Number of Detections | Original Size (MB) | Edge Computing Size (MB) |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | 1. | fire_detection_20231016.geojson | 26 | 389 | 0.005 |
 | 2. | fire_detection_20231021.geojson | 341 | 310 | 0.062 |
 | 3. | fire_detection_20231026.geojson | 526 | 386 | 0.95 |
