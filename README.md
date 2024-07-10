@@ -16,11 +16,11 @@ This is to replicate the conventional cloud solution with images. In this scenar
 | 5. | image_20240429_norm_compressed.tif | 311 |
 
 ## Solution 1 - Edge Cloud Compress  
-An average of 30% cloud cover is observed for any location on earth. In this scenario, there is a level 1 edge computing solution which is capable of masking the cloudy pixels and changing their values to 0 which increases the compression ratio for the image. This is a hybrid solution of edge computing plus cloud. The location in the dataset is Chicago downtown and the image range is from [09 April 2024 - 29 April 2024]. The output data can be found [here](https://workdrive.zohopublic.in/external/9b5a660f50a168297313a3404bfd62fba5b7d1dbf1ba4433ee6ef73de6be2add).  
+An average of 30% cloud cover is observed for any location on earth. In this scenario, there is a level 1 edge computing solution which is capable of masking the cloudy pixels and changing their values to 0 which increases the compression ratio for the image. This is a hybrid solution of edge computing plus cloud. The location in the dataset is Chicago downtown and the image range is from [09 April 2024 - 29 April 2024]. The output data can be found [here](https://workdrive.zohopublic.in/external/9b5a660f50a168297313a3404bfd62fba5b7d1dbf1ba4433ee6ef73de6be2add).    
  
 
 |Sl No| Dataset Name | Cloud Percentage | Original Size (MB) | Edge Computing Size (MB) |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | 1. | image_20240409_masked_compressed.tif | 27.44 | 389 | 286 |
 | 2. | image_20240414_masked_compressed.tif | 30.88 | 310 | 186 |
 | 3. | image_20240419_masked_compressed.tif | 0.75 | 386 | 386 |
