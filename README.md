@@ -46,7 +46,7 @@ In this solution, object detection is performed where only the geocoded bounding
 |Sl No| Dataset Name | Number of Detections | Original Size (MB) | Edge Computing Size (MB) |
 | --- | --- | --- | --- | --- |
 | 1. | fire_detection_20231016.geojson | 26 | 389 | 0.005 |
-| 2. | fire_detection_20231021.geojson | 341 | 310 | 0.62 |
-| 3. | fire_detection_20231026.geojson | 526 | 386 | 0.95 |
-| 4. | fire_detection_20231031.geojson | 376 | 366 | 0.68 |
-| 5. | fire_detection_20231105.geojson | 313 | 311 | 0.57 |
+| 2. | fire_detection_20231021.geojson | 341 | 310 | 0.062 |
+| 3. | fire_detection_20231026.geojson | 526 | 386 | 0.095 |
+| 4. | fire_detection_20231031.geojson | 376 | 366 | 0.068 |
+| 5. | fire_detection_20231105.geojson | 313 | 311 | 0.057 |
