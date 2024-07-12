@@ -1,10 +1,10 @@
 # Introduction  
-This repository aims at providing a preview into the differences between edge computing and the conventional cloud based solutions being used by the earth observation industry. This data set access here is to experiment with the concepts providing in the case study [here](). The data used for the experimentation is open source data from sentinel-2 products.   
+This repository complements a SkyServe case study found [here]() that aims to bring out differences in data footprint between a conventional cloud-first geospatial solutions and a hybrid edge-first cloud-hosted geospatial solution. The data used for the in this analysis is open source from the ESA Copernicus Sentinel-2 satellites.
 
 # Data  
-The data was pre-processed before performing any sort of a optimization. The datasets show difference between the hybrid solution of edge computing and cloud vs just cloud. All raster data used here has undergone LZW compression, however the original size of the image is 460MB. The current industry uses this compression even without having a edge computer onboard. 
+For both methods, the pre-processing (i.e. transformation from Raw to TOA/BOA products) is assumed to be identical. All raster data used here has undergone LZW compression, however if decompressed, the image size for all scenes is 460MB. Almost all EO operators today use LZW or similar performing lossless compression algorithms, and the same has been proven with satellite edge computers onboard satellites.
 
-## Convetional - Cloud Solutions  
+## Conventional Cloud-first Solutions  
 This is to replicate the conventional cloud solution with images. In this scenario, there is no edge computing present. The data is imaged by the satellited and directly downlinked, hence even the pixels which are not usefull are downlinked. The location in the dataset is Chicago downtown and the image range is from [09 April 2024 - 29 April 2024]. The output data can be found [here](https://workdrive.zohopublic.in/external/b78df4780a28d02bb3f71381bd80ce78b6b336efd5680e9b93993cabdc5b28d2).  
 
 |Sl No| Dataset Name | Size (MB) | 
@@ -46,7 +46,7 @@ In this solution, object detection is performed where only the geocoded bounding
 |Sl No| Dataset Name | Number of Detections | Original Size (MB) | Edge Computing Size (MB) |
 | --- | --- | --- | --- | --- |
 | 1. | fire_detection_20231016.geojson | 26 | 389 | 0.005 |
-| 2. | fire_detection_20231021.geojson | 341 | 310 | 0.062 |
+| 2. | fire_detection_20231021.geojson | 341 | 310 | 0.62 |
 | 3. | fire_detection_20231026.geojson | 526 | 386 | 0.95 |
 | 4. | fire_detection_20231031.geojson | 376 | 366 | 0.68 |
 | 5. | fire_detection_20231105.geojson | 313 | 311 | 0.57 |
