@@ -19,13 +19,13 @@ This is to replicate the conventional cloud solution with images. In this scenar
 An average of 30% cloud cover is observed for any location on earth. In this scenario, there is a level 1 edge computing solution which is capable of masking the cloudy pixels and changing their values to 0 which increases the compression ratio for the image. This is a hybrid solution of edge computing plus cloud. The location in the dataset is Chicago downtown and the image range is from [09 April 2024 - 29 April 2024]. The output data can be found [here](https://workdrive.zohopublic.in/external/9b5a660f50a168297313a3404bfd62fba5b7d1dbf1ba4433ee6ef73de6be2add).    
  
 
-|Sl No| Dataset Name | Cloud Percentage | Original Size (MB) | Edge Computing Size (MB) |
+|Sl No| Dataset Name | Cloud Cover | Original Size (MB) | Edge Computing Size (MB) |
 | --- | --- | --- | --- | --- |
-| 1. | image_20240409_masked_compressed.tif | 27.44 | 389 | 286 |
-| 2. | image_20240414_masked_compressed.tif | 30.88 | 310 | 186 |
-| 3. | image_20240419_masked_compressed.tif | 0.75 | 386 | 386 |
-| 4. | image_20240424_masked_compressed.tif | 88.09 | 366 | 59.5 |
-| 5. | image_20240429_masked_compressed.tif | 99.98 | 311 | 3.74 |
+| 1. | image_20240409_masked_compressed.tif | 27.44% | 389 | 286 |
+| 2. | image_20240414_masked_compressed.tif | 30.88% | 310 | 186 |
+| 3. | image_20240419_masked_compressed.tif | 0.75% | 386 | 386 |
+| 4. | image_20240424_masked_compressed.tif | 88.09% | 366 | 59.5 |
+| 5. | image_20240429_masked_compressed.tif | 99.98% | 311 | 3.74 |
 
 ## Solution 2 - Feature Select
 To derive value addition from the satellite images, additional processing is require which detects targetted features from the image. This provides a output which is a segmentation mask. Where the features are identified into classes and can be written. For this example we have a multi-class segmentation with the following classes {0: Cloud, 1: Water, 2: Forest, 3: Vegetation, 4: Urban}, the masks have a min of 0 and a max of 4. This is a hybrid solution of edge computing plus cloud. The location in the dataset is Chicago downtown and the image range is from [09 April 2024 - 29 April 2024]. The output data can be found [here](https://workdrive.zohopublic.in/external/150a10704d80f6295db564e04adca07f9b4dc424e4336c84844b1b987192b2ef).  
